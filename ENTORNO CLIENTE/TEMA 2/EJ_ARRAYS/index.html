@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJERCICIOS DE ARRAYS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #2980b9;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #217dbb;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>EJERCICIOS DE ARRAYS</h1>
+  <p>Haz clic en cada botón para ejecutar el script. Abres la <strong>Consola del Navegador (F12)</strong> para ver los resultados de los ejercicios 1 al 5.</p>
+
+  <div class="card">
+    <h2>01 / Buscar un texto</h2>
+    <p>Búsqueda en array limpiando espacios y mayúsculas.</p>
+    <button onclick="ejecutarScript('ejercicio01.js')">Ejecutar Ejercicio 1</button>
+    <div class="note">Salida por consola (F12).</div>
+  </div>
+
+  <div class="card">
+    <h2>02 / Analizar una lista de números</h2>
+    <p>Cálculo de producto, mayor y media con recorridos.</p>
+    <button onclick="ejecutarScript('ejercicio02.js')">Ejecutar Ejercicio 2</button>
+    <div class="note">Salida por consola (F12).</div>
+  </div>
+
+  <div class="card">
+    <h2>03 / Ficha de una persona</h2>
+    <p>Objeto persona, propiedades y método con <code>this</code>.</p>
+    <button onclick="ejecutarScript('ejercicio03.js')">Ejecutar Ejercicio 3</button>
+    <div class="note">Salida por consola (F12).</div>
+  </div>
+
+  <div class="card">
+    <h2>04 / Antigüedad de un coche</h2>
+    <p>Objeto coche, validación de año y uso de <code>Date</code>.</p>
+    <button onclick="ejecutarScript('ejercicio04.js')">Ejecutar Ejercicio 4</button>
+    <div class="note">Salida por consola (F12).</div>
+  </div>
+
+  <div class="card">
+    <h2>05 / Productos de una tienda</h2>
+    <p>Objeto con array de productos y método de suma total.</p>
+    <button onclick="ejecutarScript('ejercicio05.js')">Ejecutar Ejercicio 5</button>
+    <div class="note">Salida por consola (F12).</div>
+  </div>
+
+  <div class="card">
+    <h2>06 / Edad de un perro </h2>
+    <p>Interacción mediante prompt, validación continua y alert.</p>
+    <button onclick="ejecutarScript('ejercicio06.js')">Ejecutar Ejercicio 6</button>
+    <div class="note">Abre ventanas emergentes (prompt y alert).</div>
+  </div>
+
+  <script>
+    function ejecutarScript(nombreArchivo) {
+      // Esto es una etiqueta script para volver a ejecutarlo cada vez que pulsamos.
+      const script = document.createElement('script');
+      script.src = nombreArchivo + '?t=' + new Date().getTime();
+      document.body.appendChild(script);
+    }
+  </script>
+
+</body>
+</html>
