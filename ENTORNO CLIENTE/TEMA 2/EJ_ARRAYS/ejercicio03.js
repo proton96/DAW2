@@ -5,7 +5,7 @@ const persona = {
   edad: 24,
   profesion: "desarrolladora",
 
-  // Método que utiliza,.
+  // Método que utiliza.
   describir() {
     return `${this.nombre} tiene ${this.edad} años y trabaja como ${this.profesion}.`;
   }
