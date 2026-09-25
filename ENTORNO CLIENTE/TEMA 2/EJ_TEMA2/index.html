@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS TEMA 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #2980b9;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #217dbb;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>EJERCICIOS DE ARRAYS</h1>
+    <p>Haz clic en cada botón para ejecutar el script. Abres la <strong>Consola del Navegador (F12)</strong> para ver
+        los resultados de los ejercicios 1 al 5.</p>
+
+    <div class="card">
+        <h2>01 / Precio final de un producto</h2>
+        <p>Variables y operadores aritméticos</p>
+        <button onclick="ejecutarScript('act1.js')">Ejecutar Ejercicio 1</button>
+        <div class="note">Salida por consola (F12).</div>
+    </div>
+
+    <div class="card">
+        <h2>02 / Reparto entre empleados</h2>
+        <p>División entera y resto</p>
+        <button onclick="ejecutarScript('act2.js')">Ejecutar Ejercicio 2</button>
+        <div class="note">Salida por consola (F12).</div>
+    </div>
+
+    <div class="card">
+        <h2>03 / Ficha de un empleado</h2>
+        <p>Variables, cadenas y cálculo de porcentajes.</p>
+        <button onclick="ejecutarScript('act3.js')">Ejecutar Ejercicio 3</button>
+        <div class="note">Salida por consola (F12).</div>
+    </div>
+
+    <div class="card">
+        <h2>04 / ¿Está en la lista de empleados?</h2>
+        <p>Arrays, prompt, cadenas y condicionales</code>.</p>
+        <button onclick="ejecutarScript('act4.js')">Ejecutar Ejercicio 4</button>
+        <div class="note">Salida por consola (F12).</div>
+    </div>
+
+    <div class="card">
+        <h2>05 / Recoger y mostrar productos</h2>
+        <p>Arrays, bucles y control de la entrada</p>
+        <button onclick="ejecutarScript('act5.js')">Ejecutar Ejercicio 5</button>
+        <div class="note">Salida por consola (F12).</div>
+    </div>
+
+    <script>
+        function ejecutarScript(nombreArchivo) {
+            // Esto es una etiqueta script para volver a ejecutarlo cada vez que pulsamos.
+            const script = document.createElement('script');
+            script.src = nombreArchivo + '?t=' + new Date().getTime();
+            document.body.appendChild(script);
+        }
+    </script>
+
+</body>
+
+</html>
