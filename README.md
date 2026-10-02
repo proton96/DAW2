@@ -1,6 +1,6 @@
 # 📚 Repositorio DAW - Segundo Año
 
-## 👋 Bienvenida
+## 👋 Bienvenido
 
 ¡Hola! Soy **Jose Carlos Martin**. Bienvenido/a a mi repositorio personal de **Desarrollo de Aplicaciones Web (DAW)**.
 
